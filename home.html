@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<head>
+    <style>
+        body {  background-color: white;
+		color:black;
+		font-size:30px;
+		position:absolute; top:70px; left:70px;}
+       
+	div.c1{
+		animation-name:moveMe;
+		animation-duration:3s;}
+
+	@keyframes moveMe{
+		from{opacity:0;}
+		to{opacity:1;}   }
+
+	div.c2{
+		display: flex;
+		font-size:22pt;
+		position:absolute; top:600px; left:600px;}
+
+        div.c3 {
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            margin: 5px;
+            cursor: pointer;
+            border: 2px solid white; }
+	
+
+    </style>
+<script>
+        function changeColor(color) {
+           document.getElementById("mainBody").style.backgroundColor = color;
+        }
+    </script>
+</head>
+<body id="mainBody">
+
+<div class="c1"><h1 style="font-size:50pt; color:pink; ">💐 Welcom To My Website </b><br/>
+
+
+    <h2>Hello, my name is Raneen Alayasi</h2>
+    <p>I’M A Student In AAUP </p>
+    <p>I Always Strive to learn new skills and apply them to practical mathematics to express my creativity and technical curiosity. 
+	I believe that technology has the power to shape the future,and I aspire to leave a positive impact in this field.</p>
+ 
+   </div>
+
+<div class="c2">Choose a background color:
+        <div class="c3" style="background-color: hotpink;" onclick="changeColor('hotpink')"></div>
+        <div class="c3" style="background-color: red;" onclick="changeColor('red')"></div>
+        <div class="c3" style="background-color: white;border-color: black;" onclick="changeColor('white')"></div>
+        <div class="c3" style="background-color: #34495e;" onclick="changeColor('#34495e')"></div>
+        <div class="c3" style="background-color: purple;" onclick="changeColor('purple')"></div>
+    </div>
+</body>
+</html>
